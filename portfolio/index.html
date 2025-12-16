@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Premium Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">Bhushan Kumar</a>
+      <ul class="nav-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container" id="home">
+    <div class="card">
+      <div class="profile">
+        <img src="bhushan.jpg" alt="Bhushan Kumar" />
+        <h1>Bhushan kumar</h1>
+        <p>Web Developer • UI/UX Enthusiast • Designer</p>
+      </div>
+
+      <section class="about" id="about">
+        <h2>About Me</h2>
+        <p>I build modern, clean and responsive web experiences using HTML, CSS, JavaScript, and popular frameworks.</p>
+      </section>
+
+      <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <span class="tag">HTML</span>
+          <span class="tag">CSS</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">React</span>
+          <span class="tag">UI/UX</span>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <h2>Projects</h2>
+        <div class="projects-list">
+          <div class="project-box">
+            <h3>Portfolio Site</h3>
+            <p>A modern UI portfolio showcasing my skills and achievements.</p>
+          </div>
+          <div class="project-box">
+            <h3>Landing Page</h3>
+            <p>A clean marketing landing page with animations and glassmorphism.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p>Have a project in mind or just want to say hi? Let's connect!</p>
+        <a href="mailto:bk924772@gmail.com" class="contact-btn">Say Hello</a>
+      </section>
+    </div>
+  </div>
+
+  <script>
+    // Smooth scrolling for nav links
+    document.querySelectorAll('.nav-menu a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
